@@ -1,0 +1,19 @@
+{
+  "Id": "NumberOfPlayers",
+  "Source": [
+    "BingoData.json"
+  ],
+  "Header": "Select how many players are in your party.",
+  "Buttons": [
+    {
+      "ButtonName": "Singleplayer: 1 player",
+      "ButtonValue": "IsSingleplayer",
+      "OnClickEvent": "togglePartySizeOptions('IsSingleplayer')"
+    },
+    {
+      "ButtonName": "Party: 2 players",
+      "ButtonValue": "IsParty",
+      "OnClickEvent": "togglePartySizeOptions('IsParty')"
+    }
+  ]
+}

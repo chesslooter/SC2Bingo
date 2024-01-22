@@ -1,0 +1,998 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vanilla-picker@2"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <title>SC2 Coop Bingo!</title>
+</head>
+<body class="schemeOne">
+    <div class="container">
+        <div class="row" style="padding-top: 10px">
+            <div class="col bingoHeader">
+                <div class="imgWrapper">
+                    <img src="new_gillyShark_112_opaque.png" alt="" />
+                </div>
+                <h2 style="color: #fff">BINGO</h2>
+            </div>
+        </div>
+        <!--Options Modal Section starts here-->
+        <div class="modal fade" id="optionModal" tabindex="-1" role="dialog" aria-labelledby="optionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #2c2f33">
+                        <h5 class="modal-title" style="color: #fff">Customize your bingo options. Select each category below. Selected options will be highlighted.</h5>
+                    </div>
+                    <div class="modal-body" style="background-color: #2c2f33">
+                        <div class="container">
+                            <div id="selectorAccordion">
+                                <div id="selectorRow" class="row" style="padding-top: 10px">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Options Modal Section ends here-->
+        <!--No Filters Selected Popup Modal starts here-->
+        <div class="modal fade" id="noFiltersModal" tabindex="-1" role="dialog" aria-labelledby="noFiltersModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #2c2f33">
+                        <h5 class="modal-title" style="color: #f00">You have not selected any filters. Are you sure you want to proceed with board generation?</h5>
+                    </div>
+                    <div class="modal-body" style="background-color: #2c2f33">
+                        <div class="row buttonRow">
+                            <div class="col">
+                                <div class="form-check form-check-inline" style="padding-left: 0px;">
+                                    <button id="BingoBtn" class="btn btnNew" onclick="{ $('#noFiltersModal').modal('hide'); prepareData();}">Yes. I long for chaos.</button>
+                                </div>
+                                <div class="form-check form-check-inline" style="padding-left: 0px;">
+                                    <button id="BingoBtn" class="btn btnSettings" onclick="{ $('#noFiltersModal').modal('hide'); $('#optionModal').modal('show');}">No. I wish to set filters.</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--No Filters Selected Popup Modal ends here-->
+        <div class="row buttonRow">
+            <div class="col">
+                <div class="form-check form-check-inline" style="padding-left: 0px;">
+                    <button type="button" class="btn btnSettings" data-bs-toggle="modal" data-bs-target="#optionModal" onclick="{ viewedSettings = true; }">Settings</button>
+                </div>
+                <div class="form-check form-check-inline" style="padding-left: 0px;">
+                    <button id="BingoBtn" class="btn btnNew" onclick="BingoEntry()">New Board</button>
+                </div>
+                <div class="form-check form-check-inline" style="padding-left: 0px;">
+                    <button id="BingoBtn" class="btn btnSave" onclick="saveCurrentBoard()">Save Board</button>
+                </div>
+                <div class="form-check form-check-inline" style="padding-left: 0px;">
+                    <button id="BingoBtn" class="btn btnLoad" onclick="toggleLoadBingoBoardOption()">Load Board</button>
+                </div>
+                <div id="loadBingoBoardOption" class="loadBingoBoardOption" hidden>
+                    <div class="form-check form-check-inline" style="padding-left: 0px;">
+                        <input class="form-control codeInput" type="text" value="" placeholder="Enter your code here" id="bingoBoardCodeField">
+                    </div>
+                    <div class="form-check form-check-inline" style="padding-left: 0px;">
+                        <button id="BingoBtn" class="btn btnConfirmLoad" onclick="loadBingoBoard()">Load Board</button>
+                    </div>
+                </div>
+                <div class="form-check form-check-inline" style="padding-left: 0px;">
+                    <button id="colorPicker" class="btn btnColorPicker">Color Picker</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<script>
+    var colorPicker = document.querySelector('#colorPicker');
+    var picker = new Picker(colorPicker);
+    var currentColor = "rgba(255,0,0,1)";
+    const bingoDataList = "BingoDataListMaster.json";
+    const bingoFilterList = "AccordionSelectionOptions.json";
+    var isFirstBoard = true;
+    var bingoCardDataListSeparated = new Array();
+    var bingoCardsJson = new Array();
+    var buttonSelection = "";
+    var emptySelectedOptions = new Array();
+    var selectedOptions = new Array();
+    var bingoBoardOptions;
+    var loadedBingoBoard = false;
+    var viewedSettings = false;
+    var checkingDifficulty = false;
+    var selectedDifficulty;
+    var difficultyLevel = 5;
+    var difficulties = ["Easy", "Normal", "Hard", "Brutal", "Nightmare"];
+    var difficultyLevels = ["2", "4", "6", "8", "10"];
+    var currentBoardDifficulty = 5;
+    var numberOfPulledSquares = 0;
+    var difficultyTolerance = 4;
+    var buttonCounter = 0;
+    var freeSquare = false;
+    window.onload = function () {
+        printOptionsMenu();
+        retrieveBingoData(bingoDataList);
+    }
+
+    picker.onChange = function (color) {
+        colorPicker.style.background = color.rgbaString;
+        currentColor = color.rgbaString;
+    };
+
+    $('#optionModal').on('shown.bs.modal', function () {
+        $('#optionInput').trigger('focus')
+    })
+
+    function toggleSelectionMode(element) {
+        $(".collapse").each(function () {
+            if ($(this).hasClass("show")) {
+                if (!$(this).is(element)) {
+                    $(this).removeClass("show");
+                }
+            }
+        });
+    }
+
+    //function toggleNCOptions() {
+    //    if (document.getElementById("IsNC").checked) {
+    //        document.getElementById("IsSingleplayer").checked = false;
+    //        document.getElementById("IsSingleplayer").disabled = true;
+
+    //        document.getElementById("IsMultiplayer").checked = false;
+    //        document.getElementById("IsMultiplayer").disabled = true;
+
+    //        document.getElementById("IsParty").checked = false;
+    //        document.getElementById("IsParty").disabled = true;
+
+    //        document.getElementById("IsAramMaps").checked = false;
+    //        document.getElementById("IsAramMaps").disabled = true;
+
+    //        document.getElementById("IsQuickMaps").checked = false;
+    //        document.getElementById("IsQuickMaps").disabled = true;
+
+    //        document.getElementById("IsRankedMaps").checked = false;
+    //        document.getElementById("IsRankedMaps").disabled = true;
+
+    //        document.getElementById("IsCustom").checked = false;
+    //        document.getElementById("IsCustom").disabled = true;
+
+    //        document.getElementById("Brutal").checked = false;
+    //        document.getElementById("Brutal").disabled = true;
+
+    //        document.getElementById("Nightmare").checked = false;
+    //        document.getElementById("Nightmare").disabled = true;
+
+    //        document.getElementById("IsSweden").disabled = false;
+    //        document.getElementById("IsFrance").disabled = false;
+    //        document.getElementById("IsGermany").disabled = false;
+    //        document.getElementById("IsPoland").disabled = false;
+    //        document.getElementById("IsUSA").disabled = false;
+    //        document.getElementById("IsSouthKorea").disabled = false;
+
+    //        DisableAllOptions("FactionFilterMode");
+    //    } else {
+
+    //        document.getElementById("IsSingleplayer").disabled = false;
+    //        document.getElementById("IsMultiplayer").disabled = false;
+    //        document.getElementById("IsParty").disabled = false;
+    //        document.getElementById("IsAramMaps").disabled = false;
+    //        document.getElementById("IsQuickMaps").disabled = false;
+    //        document.getElementById("IsRankedMaps").disabled = false;
+    //        document.getElementById("IsCustom").disabled = false;
+    //        document.getElementById("Brutal").disabled = false;
+    //        document.getElementById("Nightmare").disabled = false;
+
+    //        document.getElementById("IsSweden").disabled = true;
+    //        document.getElementById("IsSweden").checked = false;
+
+    //        document.getElementById("IsFrance").disabled = true;
+    //        document.getElementById("IsFrance").checked = false;
+
+    //        document.getElementById("IsGermany").disabled = true;
+    //        document.getElementById("IsGermany").checked = false;
+
+    //        document.getElementById("IsPoland").disabled = true;
+    //        document.getElementById("IsPoland").checked = false;
+
+    //        document.getElementById("IsUSA").disabled = true;
+    //        document.getElementById("IsUSA").checked = false;
+
+    //        document.getElementById("IsSouthKorea").disabled = true;
+    //        document.getElementById("IsSouthKorea").checked = false;
+
+    //        EnableAllOptions("FactionFilterMode");
+    //    }
+    //}
+
+    //function toggleDifficultyOptions(option) {
+    //    if (document.getElementById(option).checked) {
+    //        if ((option == "Easy")) {
+    //            document.getElementById("Easy").checked = true;
+    //            document.getElementById("Normal").checked = false;
+    //            document.getElementById("Hard").checked = false;
+    //            document.getElementById("Brutal").checked = false;
+    //            document.getElementById("Nightmare").checked = false;
+    //        }
+    //        else if ((option == "Normal")) {
+    //            document.getElementById("Normal").checked = true;
+    //            document.getElementById("Easy").checked = false;
+    //            document.getElementById("Hard").checked = false;
+    //            document.getElementById("Brutal").checked = false;
+    //            document.getElementById("Nightmare").checked = false;
+    //        }
+    //        else if ((option == "Hard")) {
+    //            document.getElementById("Hard").checked = true;
+    //            document.getElementById("Easy").checked = false;
+    //            document.getElementById("Normal").checked = false;
+    //            document.getElementById("Brutal").checked = false;
+    //            document.getElementById("Nightmare").checked = false;
+    //        }
+    //        else if ((option == "Brutal")) {
+    //            document.getElementById("Brutal").checked = true;
+    //            document.getElementById("Easy").checked = false;
+    //            document.getElementById("Normal").checked = false;
+    //            document.getElementById("Hard").checked = false;
+    //            document.getElementById("Nightmare").checked = false;
+    //        }
+    //        else if ((option == "Nightmare")) {
+    //            document.getElementById("Nightmare").checked = true;
+    //            document.getElementById("Easy").checked = false;
+    //            document.getElementById("Normal").checked = false;
+    //            document.getElementById("Hard").checked = false;
+    //            document.getElementById("Brutal").checked = false;
+    //        }
+    //    }
+    //}
+
+    function togglePartySizeOptions(option) {
+        if (document.getElementById(option).checked) {
+            if ((option == "IsSingleplayer")) {
+                document.getElementById("IsSingleplayer").checked = true;
+                document.getElementById("IsParty").checked = false;
+                //document.getElementById("IsMultiplayer").checked = false;
+            }
+            else if ((option == "IsParty")) {
+                document.getElementById("IsSingleplayer").checked = false;
+                document.getElementById("IsParty").checked = true;
+                //document.getElementById("IsMultiplayer").checked = false;
+            }
+            //else if ((option == "IsMultiplayer")) {
+            //    document.getElementById("IsSingleplayer").checked = false;
+            //    document.getElementById("IsParty").checked = false;
+            //    document.getElementById("IsMultiplayer").checked = true;
+            //}
+        }
+    }
+
+    //function ToggleAramOptions() {
+    //    if (document.getElementById("IsAramMaps").checked) {
+    //        document.getElementById("IsAbathur").disabled = true;
+    //        document.getElementById("IsAbathur").checked = false;
+
+    //        document.getElementById("IsCho").disabled = true;
+    //        document.getElementById("IsCho").checked = false;
+
+    //        document.getElementById("IsGall").disabled = true;
+    //        document.getElementById("IsGall").checked = false;
+
+    //        document.getElementById("IsLeoric").disabled = true;
+    //        document.getElementById("IsLeoric").checked = false;
+
+    //        document.getElementById("IsSgt.Hammer").disabled = true;
+    //        document.getElementById("IsSgt.Hammer").checked = false;
+
+    //        document.getElementById("IsTheLostVikings").disabled = true;
+    //        document.getElementById("IsTheLostVikings").checked = false;
+    //    } else {
+    //        document.getElementById("IsAbathur").disabled = false;
+    //        document.getElementById("IsAbathur").checked = true;
+
+    //        document.getElementById("IsCho").disabled = false;
+    //        document.getElementById("IsCho").checked = true;
+
+    //        document.getElementById("IsGall").disabled = false;
+    //        document.getElementById("IsGall").checked = true;
+
+    //        document.getElementById("IsLeoric").disabled = false;
+    //        document.getElementById("IsLeoric").checked = true;
+
+    //        document.getElementById("IsSgt.Hammer").disabled = false;
+    //        document.getElementById("IsSgt.Hammer").checked = true;
+
+    //        document.getElementById("IsTheLostVikings").disabled = false;
+    //        document.getElementById("IsTheLostVikings").checked = true;
+    //    }
+    //}
+
+    function EnableFreeSquare() {
+        freeSquare = true;
+    }
+
+    function BingoEntry() {
+        cleanBoard();
+        buttonSelection = "Bingo";
+        loadedBingoBoard = false;
+        addSelections();
+        //Pops up a modal if the user has not clicked "Settings" to set filters.
+        if (viewedSettings) prepareData();
+        else $('#noFiltersModal').modal('show');
+    }
+
+    function addSelections() {
+        //body reference
+        var selectorColumn = document.getElementById("selectorRow");
+        iterateThroughSelections(selectorColumn);
+    }
+
+    //Recursive function to step through all tags inside of selectorRow, and add checked inputs to the selectedOptions list.
+    function iterateThroughSelections(parentTag) {
+
+        parentTag.childNodes.forEach(function (nodeChild, index, array) {
+            if (nodeChild.localName == "input" && nodeChild.checked) {
+                //Here.
+                var dataSource = nodeChild.attributes.dataSource.value;
+                var dataSources = dataSource.split(",");
+                dataSources.forEach(function (element, index, array) {
+                    if (selectedOptions[element] != undefined) {
+                        if (!checkingDifficulty && (difficulties.indexOf(nodeChild.id) >= 0)) {
+                            checkingDifficulty = true;
+                            selectedDifficulty = nodeChild.id;
+                            difficultyLevel = difficultyLevels[difficulties.indexOf(selectedDifficulty)];
+                            currentBoardDifficulty = difficultyLevel;
+                        } else {
+                            selectedOptions[element].push(nodeChild.id);
+                        }
+                    }
+                });
+            } else if (nodeChild.childNodes.length > 0) {
+                iterateThroughSelections(nodeChild);
+            }
+        });
+    }
+
+    function printOptionsMenu() {
+        retrieveFilteringSelectionOptions(bingoFilterList);
+    }
+
+    async function retrieveFilteringSelectionOptions(filename) {
+        var fileJson = "";
+        if (filename != undefined) {
+            fileJson = await fetch(filename)
+                .then(response => {
+                    return response.json();
+                });
+        }
+        addFilterMenuButtonsToPage(fileJson);
+    }
+
+    function addFilterMenuButtonsToPage(filterMenuJson) {
+
+        //body reference
+        var selectorColumn = document.getElementById("selectorRow");
+
+        var AccordionSelectionOptions = document.createElement("div");
+        AccordionSelectionOptions.setAttribute('class', 'col');
+        AccordionSelectionOptions.setAttribute('id', 'playerHeading');
+        AccordionSelectionOptions.setAttribute('style', 'padding-bottom: 10px');
+
+        filterMenuJson.forEach(function (AccordionSelectionOption, index, array) {
+            var selectionOptionButtonDiv = document.createElement("div");
+            selectionOptionButtonDiv.setAttribute('style', 'padding-right: 10px; display: inline-block');
+
+            var selectionOptionButton = document.createElement("button");
+            selectionOptionButton.setAttribute('class', 'btn btn-secondary');
+            selectionOptionButton.setAttribute('onclick', 'toggleSelectionMode(' + AccordionSelectionOption.OptionValue + ')');
+            selectionOptionButton.setAttribute('data-bs-toggle', 'collapse');
+            selectionOptionButton.setAttribute('data-bs-target', '#' + AccordionSelectionOption.OptionValue);
+            selectionOptionButton.setAttribute('data-bs-parent', '#selectorAccordion');
+            selectionOptionButton.innerHTML = AccordionSelectionOption.OptionName;
+
+            selectionOptionButtonDiv.appendChild(selectionOptionButton);
+            AccordionSelectionOptions.appendChild(selectionOptionButtonDiv);
+            //if this doesn't work, then move it to its own forEach
+            printFilterValues(AccordionSelectionOption.OptionFilename);
+        });
+        selectorColumn.appendChild(AccordionSelectionOptions);
+    }
+
+    function printFilterValues(filename) {
+        retrieveFilterValues(filename);
+    }
+
+    async function retrieveFilterValues(filename) {
+        var fileJson = "";
+        if (filename != undefined) {
+            fileJson = await fetch(filename)
+                .then(response => {
+                    return response.json();
+                });
+        }
+        addFilterValueButtonsToPage(fileJson);
+    }
+
+    function addFilterValueButtonsToPage(fileJson) {
+        //body reference
+        var selectorColumn = document.getElementById("selectorRow");
+
+        var AccordionSelectionValueOptions = document.createElement("div");
+        AccordionSelectionValueOptions.setAttribute('class', 'collapse');
+        AccordionSelectionValueOptions.setAttribute('id', fileJson.Id);
+
+        var AccordionSelectionValueHeader = document.createElement("h5");
+        AccordionSelectionValueHeader.setAttribute('class', 'modal-title');
+        AccordionSelectionValueHeader.setAttribute('id', fileJson.Id);
+        AccordionSelectionValueHeader.setAttribute('style', 'color: #fff');
+        AccordionSelectionValueHeader.innerHTML = fileJson.Header;
+        AccordionSelectionValueOptions.appendChild(AccordionSelectionValueHeader);
+        if (fileJson.HeaderButtons != undefined) {
+            var AccordionSelectionHeaderButtons = document.createElement("div");
+            AccordionSelectionHeaderButtons.setAttribute('class', 'modal-title');
+            AccordionSelectionHeaderButtons.setAttribute('id', fileJson.Id);
+            AccordionSelectionHeaderButtons.setAttribute('style', 'color: #fff');
+            PrintButtons(fileJson.HeaderButtons, AccordionSelectionHeaderButtons, fileJson, 'btn btn-outline-danger');
+            AccordionSelectionValueOptions.appendChild(AccordionSelectionHeaderButtons);
+        }
+
+        //I don't know why this condition is needed, but header buttons break regular buttons if I don't have this. Why?
+        if (fileJson != "") {
+            PrintButtons(fileJson.Buttons, AccordionSelectionValueOptions, fileJson, 'btn btn-outline-light');
+        }
+        
+        selectorColumn.appendChild(AccordionSelectionValueOptions);
+        if (fileJson.OnLoadEvent != undefined) {
+            var fn = window[fileJson.OnLoadEvent];
+            if (typeof fn === "function") {
+                fn(fileJson.OnLoadParam);
+            }
+        }
+    }
+
+    //Separating it into its own function won't save you forever.
+    function PrintButtons(Buttons, AccordionSelectionValueOptions, fileJson, buttonColor) {
+        if (Buttons.length > 8) {
+            var selectionTable;
+            var selectionRow;
+            var selectionCell;
+        }
+        //This is an absolute mess, and should be cleaned up.
+        Buttons.forEach(function (button, index, array) {
+            if (array.length > 8) {
+                if (index == 0) {
+                    selectionTable = document.createElement("table");
+                }
+                if (index % 8 == 0) {
+                    selectionRow = document.createElement("tr");
+                }
+                selectionCell = document.createElement("td");
+            }
+            var selectionOptionValueDiv = document.createElement("div");
+            selectionOptionValueDiv.setAttribute('class', 'form-check form-check-inline');
+            selectionOptionValueDiv.setAttribute('style', 'padding-left: 0px;');
+
+            var selectionOptionValueInput = document.createElement("input");
+            selectionOptionValueInput.setAttribute('class', 'btn-check');
+            selectionOptionValueInput.setAttribute('type', 'checkbox');
+            selectionOptionValueInput.setAttribute('value', '');
+            selectionOptionValueInput.setAttribute('id', button.ButtonValue);
+            var sourceAttribute = "";
+            if (fileJson.Source != undefined && fileJson.Source.length > 0) {
+                fileJson.Source.forEach(function (element, index, array) {
+                    if (selectedOptions[element] == undefined) {
+                        selectedOptions[element] = new Array();
+                        emptySelectedOptions[element] = new Array();
+                    }
+                    sourceAttribute = sourceAttribute.concat(",", element);
+                });
+            }
+            sourceAttribute = sourceAttribute.substring(1);
+            selectionOptionValueInput.setAttribute('dataSource', sourceAttribute);
+            if (button.ButtonValue != undefined) {
+                selectionOptionValueInput.setAttribute('onclick', button.OnClickEvent);
+            }
+            if (button.OptionValue != undefined) {
+                selectionOptionValueInput.setAttribute('onclick', 'toggleSelectionMode(' + button.OptionValue + ')');
+                selectionOptionValueInput.setAttribute('data-bs-toggle', 'collapse');
+                selectionOptionValueInput.setAttribute('data-bs-target', '#' + button.OptionValue);
+                selectionOptionValueInput.setAttribute('data-bs-parent', '#selectorAccordion');
+                printFilterValues(button.OptionFilename);
+            }
+            selectionOptionValueDiv.appendChild(selectionOptionValueInput);
+
+            var selectionOptionValueLabel = document.createElement("label");
+            selectionOptionValueLabel.setAttribute('class', buttonColor);
+            selectionOptionValueLabel.setAttribute('for', button.ButtonValue);
+            if (button.ButtonValue != undefined) {
+                selectionOptionValueInput.setAttribute('onclick', button.OnClickEvent);
+            }
+            selectionOptionValueLabel.innerHTML = button.ButtonName;
+            selectionOptionValueDiv.appendChild(selectionOptionValueLabel);
+
+            if (array.length > 8) {
+                selectionCell.appendChild(selectionOptionValueDiv);
+                selectionRow.appendChild(selectionCell);
+                if (index % 8 == 7 || index == (array.length - 1)) {
+                    selectionTable.appendChild(selectionRow);
+                }
+                if (index == (array.length - 1)) {
+                    AccordionSelectionValueOptions.appendChild(selectionTable);
+                }
+            } else {
+                AccordionSelectionValueOptions.appendChild(selectionOptionValueDiv);
+            }
+        });
+    }
+
+    async function retrieveBingoData(dataFileList) {
+        var dataFileNameList = await fetch(dataFileList)
+            .then(response => {
+                return response.json();
+            });
+
+        dataFileNameList.forEach(function (element, index, array) {
+            retrieveJSON(element, index, array);
+        });
+    }
+
+    async function retrieveJSON(element, index, array) {
+        var json = await fetch(element.FileName)
+            .then(response => {
+                return response.json();
+            });
+        bingoCardDataListSeparated[index] = json;
+    }
+
+    function EnableAllOptions(OnLoadParam) {
+        var heroList = document.getElementById(OnLoadParam);
+        heroList.childNodes.forEach(function (node, index, array) {
+            IterateAndChangeOptions(node, true);
+        });
+        document.getElementById("EnableAll").checked = false;
+        document.getElementById("DisableAll").checked = false;
+    }
+
+    function IterateAndChangeOptions(node, option) {
+        node.childNodes.forEach(function (nodeChild, index, array) {
+            if (nodeChild.localName != "input") {
+                IterateAndChangeOptions(nodeChild, option);
+            } else {
+                nodeChild.checked = option;
+            }
+        });
+    }
+
+    function DisableAllOptions(OnLoadParam) {
+        var heroList = document.getElementById(OnLoadParam);
+        heroList.childNodes.forEach(function (node, index, array) {
+            IterateAndChangeOptions(node, false);
+        });
+        document.getElementById("EnableAll").checked = false;
+        document.getElementById("DisableAll").checked = false;
+    }
+
+    function prepareData() {
+        bingoCardDataListSeparated.forEach(function (element, index, array) {
+            bingoCardsJson = bingoCardsJson.concat(element);
+        });
+        printTable();
+
+        if (isFirstBoard) {
+            $(document).on('click', '#bingoBoardTD', function () {
+                var color = $(this).css('background-color');
+                if (!$(this).hasClass('marked')) {
+                    $(this).addClass('marked');
+                    $(this).css("background-color", currentColor);
+                    //Sets the 0 "unchecked" in the code to 1 "checked"
+                    var selectedSquare = $(this);
+                    bingoBoardOptions.forEach(function (element, index, array) {
+                        if (element.Nickname == selectedSquare[0].firstChild.nodeValue) {
+                            element.checkedIndicator = true;
+                        }
+                    });
+                }
+                else {
+                    $(this).removeClass('marked');
+                    $(this).css("background-color", "");
+                    //Sets the 1 "checked" in the code to 0 "unchecked"
+                    var selectedSquare = $(this);
+                    bingoBoardOptions.forEach(function (element, index, array) {
+                        if (element.Nickname == selectedSquare[0].firstChild.nodeValue) {
+                            element.checkedIndicator = false;
+                        }
+                    });
+                }
+
+                checkBingoResults();
+            });
+            isFirstBoard = false;
+        }
+
+        //Do any extra setup stuff.
+    }
+
+    function cleanBoard() {
+        if (document.getElementById("bingoDiv") != null) {
+            var message = document.getElementById("bingoDiv");
+            message.remove();
+        }
+
+        //if (document.getElementById("tblDivRow") != null) {
+        //    var bingoBoard = document.getElementById("bingoBoard");
+        //    bingoBoard.remove();
+        //}
+
+        bingoCardsJson = new Array();
+        buttonSelection = "";
+        selectedOptions = new Array();
+        Object.keys(emptySelectedOptions).forEach(function (element, index, array) {
+            selectedOptions[element] = new Array();
+        });
+        checkingDifficulty = false;
+        numberOfPulledSquares = 0;
+    }
+
+    function printTable() {
+        //body reference
+        var body = document.getElementsByTagName("body")[0];
+
+        //set up bootstrap container divs
+        var containerDiv = document.createElement("div");
+        containerDiv.setAttribute('class', 'container-fluid');
+        containerDiv.setAttribute('id', 'bingoDiv');
+
+        //instructions
+        var instructDivRow = document.createElement("div");
+        var instructDivCol = document.createElement("div");
+        var instructMsg = document.createElement("h3");
+        instructDivRow.setAttribute('id', 'BingoMessage');
+        instructDivRow.setAttribute('class', 'row justify-content-center');
+        instructDivCol.setAttribute('class', 'col align-self-center');
+        instructMsg.setAttribute('class', 'BingoMessage');
+        instructMsg.innerHTML = "<div class='headerWrapper'><span>&#9432;</span> Mouse over each challenge for more information</div>";
+        instructDivCol.appendChild(instructMsg);
+        instructDivRow.appendChild(instructDivCol);
+        containerDiv.appendChild(instructDivRow);
+
+        //warning
+        var instructDivRow = document.createElement("div");
+        var instructDivCol = document.createElement("div");
+        var instructMsg = document.createElement("h3");
+        instructDivRow.setAttribute('id', 'BingoWarning');
+        instructDivRow.setAttribute('class', 'row justify-content-center');
+        instructDivCol.setAttribute('class', 'col align-self-center');
+        instructMsg.setAttribute('class', 'BingoWarning');
+        instructMsg.innerHTML = "<div class='headerWrapper'><span>&#9432;</span> This is in beta. I cannot confirm that this is in perfect working order.</div>";
+        instructDivCol.appendChild(instructMsg);
+        instructDivRow.appendChild(instructDivCol);
+        containerDiv.appendChild(instructDivRow);
+
+        // create elements <table> and a <tbody>
+        var tblDivRow = document.createElement("div");
+        var tblDivCol = document.createElement("div");
+        tblDivRow.setAttribute('class', 'row justify-content-center');
+        tblDivRow.setAttribute('id', 'tblDivRow');
+        tblDivCol.setAttribute('class', 'col align-self-center');
+        var tbl = document.createElement("table");
+        tbl.setAttribute('class', 'bingoTable');
+        tbl.setAttribute('id', 'bingoBoard');
+        var tblBody = document.createElement("tbody");
+
+        var usedBingoOptions = [];
+        for (var i = 0; i < 5; i++) {
+            row = document.createElement("tr");
+            for (var j = 0; j < 5; j++) {
+
+                var bingoElement;
+                if (freeSquare && i == 2 && j == 2) {
+                    bingoElement = pullFreeSquare();
+                } else if (!loadedBingoBoard) {
+                    bingoElement = pullNewBingoSquare(usedBingoOptions);
+                } else if (loadedBingoBoard) {
+                    bingoElement = pullBingoSquareFromLoad(usedBingoOptions);
+                }
+
+                //Create the cell
+                cellText = document.createTextNode(bingoElement.Nickname);
+                cell = document.createElement("td");
+                cell.appendChild(cellText);
+                if (bingoElement.Challenge != undefined) {
+                    if (bingoElement.Credit != undefined) {
+                        cell.setAttribute('title', bingoElement.Challenge + "\nCredit: " + bingoElement.Credit);
+                    } else {
+                        cell.setAttribute('title', bingoElement.Challenge);
+                    }
+                }
+                cell.setAttribute('class', 'td');
+                cell.setAttribute('id', 'bingoBoardTD');
+                cell.setAttribute('height', '135px');
+                cell.setAttribute('width', '150px');
+                if (bingoElement.checkedIndicator) {
+                    cell.setAttribute('class', 'td marked');
+                    cell.style.background = currentColor;
+                }
+                row.appendChild(cell);
+            }
+            tblBody.appendChild(row);
+        }
+
+        bingoBoardOptions = usedBingoOptions;
+
+        // append the <tbody> inside the <table>
+        tbl.appendChild(tblBody);
+        // put <table> in the <body>
+        tblDivCol.appendChild(tbl);
+        tblDivRow.appendChild(tblDivCol);
+        containerDiv.appendChild(tblDivRow);
+
+        //invite link. This is stupid, but I'm too lazy to fix it right now.
+        //var inviteDivRow = document.createElement("div");
+        //var inviteDivCol = document.createElement("div");
+        //var inviteMsg = document.createElement("a");
+        //inviteDivRow.setAttribute('id', 'BingoInvite');
+        //inviteDivRow.setAttribute('class', 'row justify-content-center');
+        //inviteDivCol.setAttribute('class', 'col align-self-center');
+        //inviteMsg.setAttribute('style', "color: #fff");
+        //inviteMsg.setAttribute('href', 'https://discord.gg/Ccyt5AchxM');
+        //inviteMsg.innerHTML = "Like bingo? Join the gillyShark discord!";
+        //inviteDivCol.appendChild(inviteMsg);
+        //inviteDivRow.appendChild(inviteDivCol);
+        //containerDiv.appendChild(inviteDivRow);
+
+        body.appendChild(containerDiv);
+    }
+
+    function pullNewBingoSquare(usedBingoOptions) {
+        //Pull until we get a bingo card we haven't used yet. Make this its own separate function if it gets any more complex.
+        var bingoElement;
+        var pullAgain = true;
+        var masterIndex = 0;
+        while (pullAgain) {
+            var validOption = false;
+            masterIndex = getRandomInt(bingoCardsJson.length);
+            bingoElement = bingoCardsJson[masterIndex];
+            //Changed forEach to every so we can stop iterating when we find a positive value (return false)
+            selectedOptions[bingoElement.Source].every(element => {
+                if (bingoElement[element] == "Yes") {
+                    validOption = true;
+                    return false;
+                }
+                return true;
+            });
+            if (validOption) {
+                if (checkingDifficulty) {
+                    //Selects squares that are or are within 4 of the selected difficulty, or easier. Put Math.abs in front to remove the "or easier".
+                    if ((bingoElement["Difficulty"] - difficultyLevel) <= difficultyTolerance) {
+                        console.log("Entered");
+                        console.log("Difficulty Selected: " + difficultyLevel);
+                        console.log("Current Average: " + currentBoardDifficulty);
+                        console.log("Current Square Difficulty: " + bingoElement["Difficulty"])
+                        console.log(numberOfPulledSquares);
+                        //If the board is equal to or harder than the difficulty, picks a square easier than the board average
+                        if (currentBoardDifficulty >= difficultyLevel && difficultyLevel >= bingoElement["Difficulty"]) {
+                            pullAgain = recalculateDifficultyAverages(bingoElement, pullAgain, usedBingoOptions);
+                        }
+                        //If the board is easier than the difficulty, picks a square harder than the board average
+                        else if (currentBoardDifficulty < difficultyLevel && difficultyLevel < bingoElement["Difficulty"]) {
+                            pullAgain = recalculateDifficultyAverages(bingoElement, pullAgain, usedBingoOptions);
+                        }
+                    }
+                } else {
+                    pullAgain = false;
+                    usedBingoOptions.forEach(function (element, index, array) {
+                        if (bingoElement.Nickname == element.Nickname) {
+                            pullAgain = true;
+                        }
+                    });
+                }
+            }
+        }
+        bingoElement["masterIndex"] = masterIndex;
+        bingoElement["checkedIndicator"] = false;
+        usedBingoOptions.push(bingoElement);
+        return bingoElement;
+
+    }
+
+    function pullFreeSquare() {
+        var bingoElement = [];
+        bingoElement["masterIndex"] = 0;
+        bingoElement["checkedIndicator"] = true;
+        bingoElement["Nickname"] = "Free Square";
+        bingoElement["Challenge"] = "This is free! No, really!";
+        bingoElement["Credit"] = "chesslooter";
+        return bingoElement;
+    }
+
+    function recalculateDifficultyAverages(bingoElement, pullAgain, usedBingoOptions) {
+        pullAgain = false;
+        usedBingoOptions.forEach(function (element, index, array) {
+            if (bingoElement.Nickname == element.Nickname) {
+                pullAgain = true;
+            }
+        });
+        if (!pullAgain) {
+            if (numberOfPulledSquares == 0) {
+                numberOfPulledSquares++;
+                currentBoardDifficulty = bingoElement["Difficulty"];
+            } else {
+                numberOfPulledSquares++;
+                currentBoardDifficulty = parseFloat(currentBoardDifficulty) + ((parseFloat(bingoElement["Difficulty"]) - currentBoardDifficulty) / numberOfPulledSquares);
+            }
+        }
+        return pullAgain;
+    }
+
+    function pullBingoSquareFromLoad(usedBingoOptions) {
+        var bingoReference = bingoBoardOptions[usedBingoOptions.length];
+        var bingoElement = bingoCardsJson[parseInt(bingoReference[0])];
+        bingoElement["masterIndex"] = parseInt(bingoReference[0]);
+        if (bingoReference[1] == "0") {
+            bingoElement["checkedIndicator"] = false;
+        } else if (bingoReference[1] == "1") {
+            bingoElement["checkedIndicator"] = true;
+        }
+        usedBingoOptions.push(bingoElement);
+        return bingoElement;
+    }
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    function saveCurrentBoard() {
+        bingoString = "";
+        bingoBoardOptions.forEach(function (element, index, array) {
+            //This will break if there are more than 10000 options. I'm not too worried at this current time.
+            if (element.masterIndex < 1000) {
+                bingoString = bingoString.concat("0");
+                if (element.masterIndex < 100) {
+                    bingoString = bingoString.concat("0");
+                    if (element.masterIndex < 10) {
+                        bingoString = bingoString.concat("0");
+                    }
+                }
+            }
+            bingoString = bingoString.concat(element.masterIndex.toString());
+            if (element.checkedIndicator) {
+                bingoString = bingoString.concat("1");
+            } else {
+                bingoString = bingoString.concat("0");
+            }
+        });
+        navigator.clipboard.writeText(bingoString);
+        alert("Bingo Board copied to Clipboard. Paste this into the text box to load your board. " + bingoString);
+    }
+
+    function toggleLoadBingoBoardOption() {
+        var loadOption = document.getElementById("loadBingoBoardOption");
+        if (loadOption.hidden) {
+            loadOption.hidden = false;
+        } else {
+            loadOption.hidden = true;
+        }
+    }
+
+    function loadBingoBoard() {
+        bingoBoardOptions = [];
+        var enteredCode = document.getElementById("bingoBoardCodeField").value;
+        var splitCode = enteredCode.match(new RegExp('.{1,5}', 'g'));
+        if (splitCode.length != 25) {
+            if (splitCode.length == 24) {
+                freeSquare = true;
+                toggleLoadBingoBoardOption();
+                splitCode.forEach(function (element, index, array) {
+                    var bingoBoardOption = element.match(new RegExp('.{1,4}', 'g'));
+                    bingoBoardOptions.push(bingoBoardOption);
+                });
+            } else {
+                alert("There was an error in the Bingo Board load process. Please try again, and if the problem persists, report it in the #ideas-and-bugs channel.");
+                return;
+            }
+        } else {
+            toggleLoadBingoBoardOption();
+            splitCode.forEach(function (element, index, array) {
+                var bingoBoardOption = element.match(new RegExp('.{1,4}', 'g'));
+                bingoBoardOptions.push(bingoBoardOption);
+            });
+        }
+        cleanBoard();
+        buttonSelection = "Bingo";
+        loadedBingoBoard = true;
+        prepareData();
+    }
+
+    function checkBingoResults() {
+        const bingo = identifyBingo();
+        if (bingo.bingo) {
+            bingo.bingoRows.forEach(function (row) {
+                row.forEach(function (e) {
+                    e.setAttribute('class', 'marked finishedBingo');
+                });
+            });
+
+            document.querySelector('body').setAttribute('class', 'bingoDing');
+        }
+    }
+
+    function identifyBingo() {
+
+        let results = {
+            bingo: false,
+            bingoRows: [],
+        };
+        // Looks for set known combinations of elements with .marked class that would equal bingo.
+        // returns true/false and the matching elements if true
+
+        function findDiagonalOne() {
+            return [
+                document.querySelector('tbody tr:nth-child(1) td.marked:nth-child(1)'),
+                document.querySelector('tbody tr:nth-child(2) td.marked:nth-child(2)'),
+                document.querySelector('tbody tr:nth-child(3) td.marked:nth-child(3)'),
+                document.querySelector('tbody tr:nth-child(4) td.marked:nth-child(4)'),
+                document.querySelector('tbody tr:nth-child(5) td.marked:nth-child(5)'),
+            ].filter(function (i) {
+                return i ? true : false;
+            });
+        }
+
+        function findDiagonalTwo() {
+            return [
+                document.querySelector('tbody tr:nth-child(1) td.marked:nth-child(5)'),
+                document.querySelector('tbody tr:nth-child(2) td.marked:nth-child(4)'),
+                document.querySelector('tbody tr:nth-child(3) td.marked:nth-child(3)'),
+                document.querySelector('tbody tr:nth-child(4) td.marked:nth-child(2)'),
+                document.querySelector('tbody tr:nth-child(5) td.marked:nth-child(1)'),
+            ].filter(function (i) {
+                return i ? true : false;
+            });
+        }
+
+        // invalidate old results
+        document.querySelectorAll('tbody td.marked.finishedBingo').forEach(function (e) {
+            e.setAttribute('class', 'marked');
+        });
+        document.querySelector('body').setAttribute('class', '');
+
+        const eligibleBingo = [
+            // rows
+            document.querySelectorAll('tbody tr:nth-child(1) td.marked'),
+            document.querySelectorAll('tbody tr:nth-child(2) td.marked'),
+            document.querySelectorAll('tbody tr:nth-child(3) td.marked'),
+            document.querySelectorAll('tbody tr:nth-child(4) td.marked'),
+            document.querySelectorAll('tbody tr:nth-child(5) td.marked'),
+            // columns
+            document.querySelectorAll('tbody tr td.marked:nth-child(1)'),
+            document.querySelectorAll('tbody tr td.marked:nth-child(2)'),
+            document.querySelectorAll('tbody tr td.marked:nth-child(3)'),
+            document.querySelectorAll('tbody tr td.marked:nth-child(4)'),
+            document.querySelectorAll('tbody tr td.marked:nth-child(5)'),
+            // diagonals
+            findDiagonalOne(),
+            findDiagonalTwo(),
+        ];
+
+        eligibleBingo.forEach(function (row) {
+            if (row.length === 5) {
+                results.bingo = true;
+                results.bingoRows.push(row);
+            }
+        });
+        return results;
+    }
+</script>

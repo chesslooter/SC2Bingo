@@ -1,0 +1,17 @@
+[
+  {
+    "OptionName": "Number Of Players",
+    "OptionValue": "NumberOfPlayers",
+    "OptionFilename": "NumberOfPlayers.json"
+  },
+  {
+    "OptionName": "Filter Individual Factions",
+    "OptionValue": "FactionFilterMode",
+    "OptionFilename": "FactionsList.json"
+  },
+  {
+    "OptionName": "Bonus Options",
+    "OptionValue": "BonusOptions",
+    "OptionFilename": "BonusOptions.json"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "Id": "BonusOptions",
+  "Source": [
+    "BingoData.json"
+  ],
+  "Header": "Select which bonus options you want to include.",
+  "Buttons": [
+    {
+      "ButtonName": "Mutators",
+      "ButtonValue": "IsMutator"
+    },
+    {
+      "ButtonName": "Challenges",
+      "ButtonValue": "IsChallenge"
+    },
+    {
+      "ButtonName": "Free Square",
+      "ButtonValue": "GiveFreeSquare",
+      "OnClickEvent": "EnableFreeSquare()"
+    }
+  ]
+}

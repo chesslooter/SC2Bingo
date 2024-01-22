@@ -1,0 +1,35 @@
+{
+  "Id": "FactionFilterMode",
+  "Source": [
+    "BingoData.json"
+  ],
+  "Header": "Select which commanders you wish to include/exclude. All commanders are included by default. Warning: Deselecting too many options may lead to boards loading slowly or not at all.",
+  "OnLoadEvent": "EnableAllOptions",
+  "OnLoadParam": "FactionFilterMode",
+  "HeaderButtons": [
+    {
+      "ButtonName": "Enable All",
+      "ButtonValue": "EnableAll",
+      "OnClickEvent": "EnableAllOptions('FactionFilterMode')"
+    },
+    {
+      "ButtonName": "Disable All",
+      "ButtonValue": "DisableAll",
+      "OnClickEvent": "DisableAllOptions('FactionFilterMode')"
+    }
+  ],
+  "Buttons": [
+    {
+      "ButtonName": "Terran",
+      "ButtonValue": "IsTerran"
+    },
+    {
+      "ButtonName": "Zerg",
+      "ButtonValue": "IsZerg"
+    },
+    {
+      "ButtonName": "Protoss",
+      "ButtonValue": "IsProtoss"
+    }
+  ]
+}

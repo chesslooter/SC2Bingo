@@ -1,0 +1,228 @@
+:root {
+    --darkGrey: rgb(33 37 41);
+    --darkBlue: #072448;
+    --lightBlue: #54d2d2;
+    --lighterBlue: #8bd1d1;
+    --darkBlue: #348181;
+    --green: #5be9ae;
+    --yellow: #ffcb00;
+    --darkYellow: #a38405;
+    --orange: #f8aa4b;
+    --darkOrange: #b17833;
+    --red: #ff6150;
+    --darkRed: #c94d3f;
+    --bingoCard: var(--lighterBlue);
+    --bingoCardHover: var(--lightBlue);
+}
+
+body {
+    background-color: var(--darkGrey);
+}
+
+.bingoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 155px;
+}
+
+    .bingoHeader .imgWrapper {
+        margin-right: 20px;
+        width: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.buttonRow {
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+    .buttonRow .btn {
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 10px;
+        transition: margin-top 125ms linear, box-shadow 100ms ease-in-out;
+    }
+
+        .buttonRow .btn.btnConfirmLoad {
+            transition: none;
+            margin-top: 0;
+        }
+
+        .buttonRow .btn:hover {
+            color: #fff;
+            margin-top: 5px;
+            box-shadow: 5px 5px 2px rgba(255, 255, 255, .15);
+        }
+
+        .buttonRow .btn.btnConfirmLoad:hover {
+            margin-top: 0;
+            box-shadow: none;
+        }
+
+.btnSettings {
+    background-color: var(--red);
+    text-shadow: 0px 0px 3px var(--darkRed);
+}
+
+.btnNew {
+    background-color: var(--lightBlue);
+    text-shadow: 0px 0px 3px var(--darkBlue);
+}
+
+.btnSave {
+    background-color: var(--yellow);
+    text-shadow: 0px 0px 3px var(--darkYellow);
+}
+
+.btnLoad {
+    background-color: var(--orange);
+    text-shadow: 0px 0px 3px var(--darkOrange);
+}
+
+.btnColorPicker {
+    background-color: var(--red);
+    text-shadow: 0px 0px 3px var(--darkRed);
+}
+
+.loadBingoBoardOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.codeInput {
+    width: 400px;
+}
+
+.btnConfirmLoad {
+    background-color: var(--lightBlue);
+    text-shadow: 0px 0px 3px var(--darkBlue);
+    margin-top: 5px;
+}
+
+.BingoMessage {
+    font-size: 15px;
+    color: #fff;
+    width: 800px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+    .BingoMessage .headerWrapper {
+        background-color: var(--orange);
+        display: inline-flex;
+        border-radius: 4px;
+        padding: 5px 10px 5px 7px;
+        align-items: center;
+        text-shadow: 0px 0px 3px var(--darkOrange);
+    }
+
+    .BingoMessage span {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+.BingoWarning {
+    font-size: 15px;
+    color: #fff;
+    width: 800px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.BingoWarning .headerWrapper {
+    background-color: var(--red);
+    display: inline-flex;
+    border-radius: 4px;
+    padding: 5px 10px 5px 7px;
+    align-items: center;
+    text-shadow: 0px 0px 3px var(--darkRed);
+}
+
+.BingoWarning span {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.bingoTable {
+    border-collapse: separate;
+    border-spacing: 10px;
+    height: 800px;
+    text-align: center;
+    width: 800px;
+}
+
+    .bingoTable td {
+        background-color: var(--bingoCard);
+        border-radius: 5px;
+        border: 5px solid var(--bingoCard);
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--darkGrey);
+        padding: 5px;
+        transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out, color 250ms ease-in-out;
+    }
+
+        .bingoTable td:hover {
+            background-color: var(--bingoCardHover);
+            cursor: pointer;
+        }
+
+        .bingoTable td.marked {
+            /*background-color: var(--red);*/
+            border: 5px solid var(--red);
+            color: #fff;
+            text-shadow: 0px 0px 3px var(--darkRed);
+        }
+
+            .bingoTable td.marked.finishedBingo {
+                border: 5px solid var(--yellow);
+            }
+
+.justify-content-center {
+    text-align: -webkit-center;
+}
+
+.bingoDing .bingoHeader img {
+    animation-name: logoSpin;
+    animation-duration: .5s;
+    animation-iteration-count: 7;
+    animation-timing-function: linear;
+}
+
+@keyframes logoSpin {
+    0% {
+        transform: rotateZ(0deg);
+        width: 135px;
+    }
+
+    25% {
+        transform: rotateZ(-180deg);
+        width: 95px;
+    }
+
+    50% {
+        transform: rotateZ(-360deg);
+        width: 50px;
+    }
+
+    75% {
+        transform: rotateZ(-540deg);
+        width: 95px;
+    }
+
+    100% {
+        transform: rotateZ(-720deg);
+        width: 135px;
+    }
+}

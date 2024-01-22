@@ -1,0 +1,34 @@
+{
+  "Id": "DifficultyOptions",
+  "Source": [
+    "BingoData.json"
+  ],
+  "Header": "Select your difficulty.",
+  "Buttons": [
+    {
+      "ButtonName": "Easy",
+      "ButtonValue": "Easy",
+      "OnClickEvent": "toggleDifficultyOptions('Easy')"
+    },
+    {
+      "ButtonName": "Normal",
+      "ButtonValue": "Normal",
+      "OnClickEvent": "toggleDifficultyOptions('Normal')"
+    },
+    {
+      "ButtonName": "Hard",
+      "ButtonValue": "Hard",
+      "OnClickEvent": "toggleDifficultyOptions('Hard')"
+    },
+    {
+      "ButtonName": "Brutal",
+      "ButtonValue": "Brutal",
+      "OnClickEvent": "toggleDifficultyOptions('Brutal')"
+    },
+    {
+      "ButtonName": "Nightmare",
+      "ButtonValue": "Nightmare",
+      "OnClickEvent": "toggleDifficultyOptions('Nightmare')"
+    }
+  ]
+}
