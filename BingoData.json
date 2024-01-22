@@ -1365,7 +1365,7 @@
   },
   {
     "Nickname": "Perfectly balanced",
-    "Challenge": "For a mission, your Han supply and Horner supply must remain equal (after producing units) (Han & Horner)",
+    "Challenge": "For a mission, you must produce Han supply and Horner supply in equal amounts (Galleons are both) (Han & Horner)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
