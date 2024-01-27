@@ -1,5 +1,8 @@
 [
   {
     "FileName": "BingoData.json"
+  },
+  {
+    "FileName":  "Mutators.json"
   }
 ]

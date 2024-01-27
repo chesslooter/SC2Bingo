@@ -1,363 +1,363 @@
 [
   {
-    "Nickname": "Play as Raynor",
+    "Nickname": "Complete a mission as Raynor",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Play as Kerrigan",
+    "Nickname": "Complete a mission as Kerrigan",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Play as Artanis",
+    "Nickname": "Complete a mission as Artanis",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play as Swann",
+    "Nickname": "Complete a mission as Swann",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Play as Zagara",
+    "Nickname": "Complete a mission as Zagara",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Play as Vorazun",
+    "Nickname": "Complete a mission as Vorazun",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play as Karax",
+    "Nickname": "Complete a mission as Karax",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play as Abathur",
+    "Nickname": "Complete a mission as Abathur",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Play as Alarak",
+    "Nickname": "Complete a mission as Alarak",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play as Nova",
+    "Nickname": "Complete a mission as Nova",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Play as Stukov",
+    "Nickname": "Complete a mission as Stukov",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Play as Fenix",
+    "Nickname": "Complete a mission as Fenix",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play as Dehaka",
+    "Nickname": "Complete a mission as Dehaka",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Play as Han & Horner",
+    "Nickname": "Complete a mission as Han & Horner",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Play as Tychus",
+    "Nickname": "Complete a mission as Tychus",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Play as Zeratul",
+    "Nickname": "Complete a mission as Zeratul",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play as Stetmann",
+    "Nickname": "Complete a mission as Stetmann",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
-    "IsTerran": "Yes",
-    "IsZerg": "Yes",
-    "IsProtoss": "Yes"
-  },
-  {
-    "Nickname": "Play as Mengsk",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Basic",
-    "Difficulty": 5,
-    "IsTerran": "Yes",
-    "IsZerg": "Yes"
-  },
-  {
-    "Nickname": "Play as Random",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
     "IsTerran": "Yes",
     "IsZerg": "Yes",
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play as a Terran Commander",
+    "Nickname": "Complete a mission as Mengsk",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
-    "IsTerran": "Yes"
-  },
-  {
-    "Nickname": "Play as a Zerg Commander",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
+    "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Play as a Protoss Commander",
+    "Nickname": "Complete a mission as Random",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
+    "IsTerran": "Yes",
+    "IsZerg": "Yes",
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Play a Random Mission",
+    "Nickname": "Complete a mission as a Terran Commander",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 1,
+    "IsTerran": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission as a Zerg Commander",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Basic",
+    "Difficulty": 1,
+    "IsZerg": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission as a Protoss Commander",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Basic",
+    "Difficulty": 1,
+    "IsProtoss": "Yes"
+  },
+  {
+    "Nickname": "Complete a Random Mission",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Basic",
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Dead of Night",
+    "Nickname": "Complete the mission Dead of Night",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Scythe of Amon",
+    "Nickname": "Complete the mission Scythe of Amon",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Mist Opportunities",
+    "Nickname": "Complete the mission Mist Opportunities",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Rifts to Korhal",
+    "Nickname": "Complete the mission Rifts to Korhal",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 2,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission The Vermillion Problem",
+    "Nickname": "Complete the mission The Vermillion Problem",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Oblivion Express",
+    "Nickname": "Complete the mission Oblivion Express",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Miner Evacuation",
+    "Nickname": "Complete the mission Miner Evacuation",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Temple of the Past",
+    "Nickname": "Complete the mission Temple of the Past",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Void Thrashing",
+    "Nickname": "Complete the mission Void Thrashing",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Part and Parcel",
+    "Nickname": "Complete the mission Part and Parcel",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Void Launch",
+    "Nickname": "Complete the mission Void Launch",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Malwarfare",
+    "Nickname": "Complete the mission Malwarfare",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Chain of Ascension",
+    "Nickname": "Complete the mission Chain of Ascension",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Lock & Load",
+    "Nickname": "Complete the mission Lock & Load",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play the mission Cradle of Death",
+    "Nickname": "Complete the mission Cradle of Death",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the basic Prestige Talent (P0)",
+    "Nickname": "Complete a mission using the basic Prestige Talent (P0)",
     "Challenge": "The default loadout (ex. Raynor's Renegade Commander)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Prestige",
-    "Difficulty": 5,
+    "Difficulty": 2,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the first Prestige Talent (P1)",
+    "Nickname": "Complete a mission using the first Prestige Talent (P1)",
     "Challenge": "ex. Raynor's Backwater Marshal",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Prestige",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the second Prestige Talent (P2)",
+    "Nickname": "Complete a mission using the second Prestige Talent (P2)",
     "Challenge": "ex. Raynor's Rough Rider",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Prestige",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsSingleplayer": "Yes",
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the third Prestige Talent (P3)",
+    "Nickname": "Complete a mission using the third Prestige Talent (P3)",
     "Challenge": "ex. Raynor's Rebel Raider",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -367,442 +367,43 @@
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the mutation Aggressive Deployment",
+    "Nickname": "Complete a mission before 18:00",
+    "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
+    "Category": "Basic",
+    "Difficulty": 7,
+    "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the mutation Alien Incubation",
+    "Nickname": "Complete a mission before 19:00",
+    "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
+    "Category": "Basic",
+    "Difficulty": 7,
+    "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the mutation Avenger",
+    "Nickname": "Complete a mission before 20:00",
+    "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
+    "Category": "Basic",
+    "Difficulty": 6,
+    "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the mutation Barrier",
+    "Nickname": "Complete a mission before 21:00",
+    "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
+    "Category": "Basic",
+    "Difficulty": 6,
+    "IsParty": "Yes"
   },
   {
-    "Nickname": "Play using the mutation Black Death",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Blizzard",
-    "Challenge": "Blizz pls",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Boom Bots",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Concussive Attacks",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Darkness",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Diffusion",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Double Edged",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Eminent Domain",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Evasive Maneuvers",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Fatal Attraction",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Fear",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Going Nuclear",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Hardened Will",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Heroes From the Storm",
-    "Challenge": "Or is it Resurgance?",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Inspiration",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Just Die",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Kill Bots",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Laser Drill",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Lava Burst",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Life Leech",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Long Range",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Mag-nificent",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Micro Transactions",
-    "Challenge": "I'm sorry.",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Mineral Shields",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Minesweeper",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Missile Command",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Moment of Silence",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Mutually Assured Destruction",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Orbital Strike",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Outbreak",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Photon Overload",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Polarity",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Power Overwhelming",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Propagators",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Purifier Beam",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using a random mutator",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Scorched Earth",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Self Destruction",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Shortsighted",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Slim Pickings",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Speed Freaks",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Temporal Field",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Time Warp",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Transmutation",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Twister",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Vertigo",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Void Reanimators",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Void Rifts",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation Walking Infested",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Play using the mutation We Move Unseen",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Mutations",
-    "Difficulty": 5,
-    "IsMutator": "Yes"
-  },
-  {
-    "Nickname": "Win before 18:00",
+    "Nickname": "Complete a mission before 22:00",
     "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -811,7 +412,7 @@
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Win before 19:00",
+    "Nickname": "Complete a mission before 23:00",
     "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -820,79 +421,43 @@
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Win before 20:00",
+    "Nickname": "Complete a mission before 24:00",
     "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Win before 21:00",
+    "Nickname": "Complete a mission before 25:00",
     "Challenge": "In-game time!",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsParty": "Yes"
   },
   {
-    "Nickname": "Win before 22:00",
-    "Challenge": "In-game time!",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Basic",
-    "Difficulty": 5,
-    "IsParty": "Yes"
-  },
-  {
-    "Nickname": "Win before 23:00",
-    "Challenge": "In-game time!",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Basic",
-    "Difficulty": 5,
-    "IsParty": "Yes"
-  },
-  {
-    "Nickname": "Win before 24:00",
-    "Challenge": "In-game time!",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Basic",
-    "Difficulty": 5,
-    "IsParty": "Yes"
-  },
-  {
-    "Nickname": "Win before 25:00",
-    "Challenge": "In-game time!",
-    "Source": "BingoData.json",
-    "Credit": "chesslooter",
-    "Category": "Basic",
-    "Difficulty": 5,
-    "IsParty": "Yes"
-  },
-  {
-    "Nickname": "A card to play",
+    "Nickname": "\"A card to play\"",
     "Challenge": "Have both Dusk Wings and the Hyperion on screen at once (Raynor)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 2,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "MMM(M)",
+    "Nickname": "\"MMM(M)\"",
     "Challenge": "For a mission, you can only make Marines, Marauders, and Medics (and Missile Turrets) as combat units (Raynor)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Stim to Win!",
+    "Nickname": "\"Stim to Win!\"",
     "Challenge": "At maximum supply, spam stimpack until you no longer can (Raynor)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -901,25 +466,25 @@
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Vroom vroom",
+    "Nickname": "\"Vroom vroom\"",
     "Challenge": "Use Ignite Afterburners on at least 60 supply worth of units at once (Raynor)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "I am the Swarm",
+    "Nickname": "\"I am the Swarm\"",
     "Challenge": "For a mission, only Kerrigan and static defense can deal damage (Kerrigan)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 7,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Assimilation Mastery",
+    "Nickname": "\"Assimilation Mastery\"",
     "Challenge": "Assimilate at least 3000 resources in one mission (Kerrigan)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -928,25 +493,25 @@
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Scarlett-level creep spread",
+    "Nickname": "\"Scarlett-level creep spread\"",
     "Challenge": "For a mission, only fight while on creep (Kerrigan)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Terry the Torrasque",
+    "Nickname": "\"Terry the Torrasque\"",
     "Challenge": "Revive one ultralisk at least five times (Kerrigan)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "My Life for Aiur",
+    "Nickname": "\"My Life for Aiur\"",
     "Challenge": "Warp in at least 100 supply to one power field in under 30s (Artanis)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -955,43 +520,43 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Commence Bombardment",
+    "Nickname": "\"Commence Bombardment\"",
     "Challenge": "Kill at least 50 units/buildings with Orbital Strike and Solar Bombardment in one mission (Artanis)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Khassar de templari",
+    "Nickname": "\"Khassar de templari\"",
     "Challenge": "Damage an enemy and restore shields to a friendly unit with one cast of Psionic Storm (Artanis)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Do not judge a dragoon by the paths they choose to walk!",
+    "Nickname": "\"Do not judge a dragoon by the paths they choose to walk!\"",
     "Challenge": "For a mission, every dragoon produced must be issued shift-queued at least one minute of move commands before entering battle (Artanis)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "174 gigawatts. Pretty.",
+    "Nickname": "\"174 gigawatts. Pretty.\"",
     "Challenge": "Use the Drakken laser drill's Pulse Cannon with vision granted by Concentrated Beam (Swann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Rise of the Machines",
+    "Nickname": "\"Rise of the Machines\"",
     "Challenge": "Complete Immortality Protocol at least 20 times in one mission (Swann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1000,7 +565,7 @@
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Betty here will roast 'em good.",
+    "Nickname": "\"Betty here will roast 'em good.\"",
     "Challenge": "Defeat an enemy attack wave using exclusively static defense (Swann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1009,16 +574,16 @@
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Hope you like warbots, heh.",
+    "Nickname": "\"Hope you like warbots, heh.\"",
     "Challenge": "Kill 20 units with a single Combat Drop (Swann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Know the fury of the swarm!",
+    "Nickname": "\"Know the fury of the swarm!\"",
     "Challenge": "Remax at least three times over the course of a fight (Zagara)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1027,25 +592,25 @@
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Bile Launchers exist!",
+    "Nickname": "\"Bile Launchers exist!\"",
     "Challenge": "Kill an enemy unit with a bile launcher (Zagara)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "So many banelings!",
+    "Nickname": "\"So many banelings!\"",
     "Challenge": "Have at least 50 banelings on screen at once (Zagara)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Every life is sacred",
+    "Nickname": "\"Every life is sacred\"",
     "Challenge": "For a mission, produce no banelings or scourge (including free banelings) (Zagara)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1054,70 +619,70 @@
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "We strike from the shadows!",
+    "Nickname": "\"We strike from the shadows!\"",
     "Challenge": "Snipe a map objective using cloaked units (Vorazun)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "We are as one",
+    "Nickname": "\"We are as one\"",
     "Challenge": "Control at least 20 mind controlled units at once (Vorazun)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Body blocking",
+    "Nickname": "\"Body blocking\"",
     "Challenge": "Trap at least 10 units in one stasis ward (Vorazun)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Lettuce attack!",
+    "Nickname": "\"Lettuce attack!\"",
     "Challenge": "Have Disruption Web active on five enemy structures at once (Vorazun)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "We are all Templar",
+    "Nickname": "\"We are all Templar\"",
     "Challenge": "Win a mission using no static defense (Karax)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Meme Beam engaged",
+    "Nickname": "\"Meme Beam engaged\"",
     "Challenge": "Kill 25 units with a single cast of Purifier Beam (Karax)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "A glitch in the matrix",
+    "Nickname": "\"A glitch in the matrix\"",
     "Challenge": "In one mission, use energizers to control 10 enemy units (Karax)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Pew pew pew!",
+    "Nickname": "\"Pew pew pew!\"",
     "Challenge": "Kill a hybrid using exclusively Shadow Cannon (Karax)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1126,97 +691,97 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Pinnacle of Zerg evolution",
+    "Nickname": "\"Pinnacle of Zerg evolution\"",
     "Challenge": "Have at least three Brutalisks and three Leviathans at once (Abathur)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Zerg regeneration",
+    "Nickname": "\"Zerg regeneration\"",
     "Challenge": "Heal a mechanical unit with Queens and Mend at the same time (Abathur)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "The true ball of bio",
+    "Nickname": "\"The true ball of bio\"",
     "Challenge": "Create a biomass pickup with at least 100 biomass inside (Abathur)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 7,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Many toxic nests",
+    "Nickname": "\"Many toxic nests\"",
     "Challenge": "For a mission, place at least one toxic nest at the top of each ramp on the entire map (Abathur)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Highlord and Deathlord",
+    "Nickname": "\"Highlord and Deathlord\"",
     "Challenge": "Finish a misson where Alarak has at least 200 kills (Alarak)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Map hacking",
+    "Nickname": "\"Map hacking\"",
     "Challenge": "Delay an enemy attack using forcefields (Alarak)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "This unit seems fair",
+    "Nickname": "\"This unit seems fair\"",
     "Challenge": "Have one Vanguard with at least 100 kills (Alarak)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "*I* am Highlord",
+    "Nickname": "\"*I* am Highlord\"",
     "Challenge": "In one mission, sacrifice at least 20,000 life to Alarak (Alarak)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Commencing operations",
+    "Nickname": "\"Commencing operations\"",
     "Challenge": "Clear a map objective using only Nova (Nova)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Specialization specialist",
+    "Nickname": "\"Specialization specialist\"",
     "Challenge": "Complete a mission using units from only one production structure (Nova)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "The Dominion's Finest",
+    "Nickname": "\"The Dominion's Finest\"",
     "Challenge": "Pull off a neat trick that includes switching between Stealth mode and Assault mode (Nova)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1225,46 +790,46 @@
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "One Woman Army",
+    "Nickname": "\"One Woman Army\"",
     "Challenge": "In one mission, kill at least 100 units with Nova (Nova)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "The endless tide marches",
+    "Nickname": "\"The endless tide marches\"",
     "Challenge": "Complete a mission using only infested civilians, infantry, and bunkers (Stukov)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Minimizing civilian casualties",
-    "Challenge": "Complete a mission with no civilian deaths (aside from timeout) (Stukov)",
+    "Nickname": "\"Minimizing civilian casualties\"",
+    "Challenge": "Complete a mission with no civilian deaths (including from timeout) (Stukov)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 7,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Gerard's legacy",
+    "Nickname": "\"Gerard's legacy\"",
     "Challenge": "Defeat an enemy attack wave or map objective using only the Aleksander (Stukov)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Leaping up and exploding their starships",
+    "Nickname": "\"Leaping up and exploding their starships\"",
     "Challenge": "Kill a capital ship using volatile infested (Stukov)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1274,25 +839,25 @@
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Global presence",
+    "Nickname": "\"Global presence\"",
     "Challenge": "Kill three different unit types in three different places using the three different suits in under 30 seconds (Fenix)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "(Champions) of the Storm",
+    "Nickname": "\"(Champions) of the Storm\"",
     "Challenge": "Activate every champion A.I. at once (Fenix)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "A major disruption",
+    "Nickname": "\"A major disruption\"",
     "Challenge": "Kill 8 units with a single Purification Nova (Fenix)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1301,7 +866,7 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Tactical data supremacy",
+    "Nickname": "\"Tactical data supremacy\"",
     "Challenge": "Over one mission, produce at least 20 supply of units for each champion (Fenix)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1310,97 +875,97 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Picky eater",
+    "Nickname": "\"Picky eater\"",
     "Challenge": "For a mission, Dehaka cannot consume the same unit type twice in a row (Dehaka)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Dehakazilla",
+    "Nickname": "\"Dehakazilla\"",
     "Challenge": "Reach maximum level Dehaka (varies by prestige) (Dehaka)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Pack together strong",
+    "Nickname": "\"Pack together strong\"",
     "Challenge": "Summon all three pack leaders at once (Dehaka)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 3,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Life finds a way",
+    "Nickname": "\"Life finds a way\"",
     "Challenge": "For a mission, only fight with Dehaka and primal evolutions (Ravasaurs, Primal Igniters, etc.) (Dehaka)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "The Magnificent Matthew",
-    "Challenge": "For a mission, only produce units from Horner's Starport (Han & Horner)",
+    "Nickname": "\"The Magnificent Matthew\"",
+    "Challenge": "For a mission, only produce combat units from Horner's Starport (Han & Horner)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 8,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "The Marvelous Mira",
-    "Challenge": "For a mission, only produce units from Han's Assault Galleons (Han & Horner)",
+    "Nickname": "\"The Marvelous Mira\"",
+    "Challenge": "For a mission, only produce combat units from Han's Assault Galleons (Han & Horner)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 7,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Perfectly balanced",
+    "Nickname": "\"Perfectly balanced\"",
     "Challenge": "For a mission, you must produce Han supply and Horner supply in equal amounts (Galleons are both) (Han & Horner)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Impossible! Mag Mines on Aiur!",
+    "Nickname": "\"Impossible! Mag Mines on Aiur!\"",
     "Challenge": "Kill a hybrid using exclusively Mag Mines and Widow Mines (Han & Horner)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "Equal opportunity employer",
+    "Nickname": "\"Equal opportunity employer\"",
     "Challenge": "Hire every Outlaw (this will take multiple missions) (Tychus)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "MOBA enthusiast",
+    "Nickname": "\"MOBA enthusiast\"",
     "Challenge": "For a mission, each Outlaw must be individually controlled (Tychus)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "F2 enthusiast",
+    "Nickname": "\"F2 enthusiast\"",
     "Challenge": "For a mission, the Outlaws may only be selected using F2 (Tychus)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1409,7 +974,7 @@
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "In the rear with the gear",
+    "Nickname": "\"In the rear with the gear\"",
     "Challenge": "For a mission, each recruited Outlaw must be fully upgraded before the mission ends (Tychus)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1418,16 +983,16 @@
     "IsTerran": "Yes"
   },
   {
-    "Nickname": "What?",
+    "Nickname": "\"What?\"",
     "Challenge": "For a mission, collect zero Artifact Fragments (Zeratul)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 8,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Is this that movie about the blue people?",
+    "Nickname": "\"Is this that movie about the blue people?\"",
     "Challenge": "Your selected Avatar must get at least 29 kills in one calldown (for the $2.9B Avatar 2009 made) (Zeratul)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1436,16 +1001,16 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "The Prophecy!",
+    "Nickname": "\"The Prophecy!\"",
     "Challenge": "Collect three Prophecy Fragments before minute 12 (Zeratul)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Alone",
+    "Nickname": "\"Alone\"",
     "Challenge": "Finish a mission without using static defense, Legendary Legions, or Avatars (Zeratul)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1454,7 +1019,7 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Super Gary to the rescue!",
+    "Nickname": "\"Super Gary to the rescue!\"",
     "Challenge": "Kill 100 units with Gary/Super Gary in one mission (Stetmann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1465,29 +1030,29 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Disco drones",
+    "Nickname": "\"Disco drones\"",
     "Challenge": "For a mission, you must change the Stetzone configuration at least once every 30s (Stetmann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes",
     "IsZerg": "Yes",
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "TERROR time",
+    "Nickname": "\"TERROR time\"",
     "Challenge": "For a mission, Mecha Lurkers can only move while burrowed, and you must achieve at least 30 supply of them (Stetmann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes",
     "IsZerg": "Yes",
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "Power bank withdrawl",
+    "Nickname": "\"Power bank withdrawl\"",
     "Challenge": "Connect at least 10 UMI-C Charging Protocols at the same time (Stetmann)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1498,37 +1063,37 @@
     "IsProtoss": "Yes"
   },
   {
-    "Nickname": "The Geneva checklist",
+    "Nickname": "\"The Geneva checklist\"",
     "Challenge": "Nuke a Dominion Trooper who is standing in a Contaminated Strike (Mengsk)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 4,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Powerlevling",
+    "Nickname": "\"Powerlevling\"",
     "Challenge": "For a mission, you may only build another Royal Guard unit when all of your existing Royal Guard are rank three (Mengsk)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 6,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "*My* Dominion",
+    "Nickname": "\"*My* Dominion\"",
     "Challenge": "For a mission, you may not build Royal Guard units (Mengsk)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Basic",
-    "Difficulty": 5,
+    "Difficulty": 7,
     "IsTerran": "Yes",
     "IsZerg": "Yes"
   },
   {
-    "Nickname": "Suit is *not* fitting okay",
+    "Nickname": "\"Suit is *not* fitting okay\"",
     "Challenge": "For a mission, you may not swap between Dominion Laborers and Dominion Troopers (Mengsk)",
     "Source": "BingoData.json",
     "Credit": "chesslooter",
@@ -1543,7 +1108,7 @@
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Challenge",
-    "Difficulty": 5,
+    "Difficulty": 9,
     "IsChallenge": "Yes"
   },
   {
@@ -1552,7 +1117,7 @@
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Challenge",
-    "Difficulty": 5,
+    "Difficulty": 13,
     "IsChallenge": "Yes"
   },
   {
@@ -1561,7 +1126,7 @@
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Challenge",
-    "Difficulty": 5,
+    "Difficulty": 13,
     "IsChallenge": "Yes"
   },
   {
@@ -1570,7 +1135,214 @@
     "Source": "BingoData.json",
     "Credit": "chesslooter",
     "Category": "Challenge",
-    "Difficulty": 5,
+    "Difficulty": 4,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Techless edition",
+    "Challenge": "For a mission, you may not research any upgrades or use any mastery points",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 10,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Co-op newbie edition",
+    "Challenge": "Complete a mission with a commander level five or less",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 9,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Workers only edition",
+    "Challenge": "Complete a mission without producing or summoning any combat units",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 13,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Marines only edition",
+    "Challenge": "Complete a mission where your only marines can attack or defend. Workers can work, but not fight",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 10,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Zerglings only edition",
+    "Challenge": "Complete a mission where you only deal damage with zerglings, and only build zerglings and drones",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 10,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Zealots only edition",
+    "Challenge": "Complete a mission where only zealots and probes are allowed, without using any top bar abilities",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 10,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Blindfolded edition",
+    "Challenge": "Complete a mission while blindfolded (or by turning off your monitor)",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 14,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "SC1 edition",
+    "Challenge": "Complete a mission while only building units available in the base game of SC1",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 9,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Brood war edition",
+    "Challenge": "Complete a mission while only building combat units added in the Brood War expansion (workers are allowed)",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 10,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Minimap edition",
+    "Challenge": "Complete a mission where you may only issue orders to your combat units on the minimap",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 12,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Motion sickness edition",
+    "Challenge": "Complete a mission completely zoomed in",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 13,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "NASL edition",
+    "Challenge": "Complete a mission with sound disabled",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 8,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Wrist injury edition",
+    "Challenge": "Complete a mission without using any hotkeys",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 12,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Sidescroller edition",
+    "Challenge": "Complete a mission where you can only move your camera using mouse scroll at the slowest speed. No camera locations, no double-tapping control groups.",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 12,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Cultural enrichment edition",
+    "Challenge": "Complete a mission while using a different language you do not speak",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 7,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Standard hotkey edition",
+    "Challenge": "Complete a mission using the standard hotkey layout",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 7,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Grid hotkey edition",
+    "Challenge": "Complete a mission using the grid hotkey layout",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 7,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Keyboard warrior edition",
+    "Challenge": "Complete a mission using only your keyboard. This will likely require a new hotkey setup.",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 13,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "AFK edition",
+    "Challenge": "Complete a mission where you may not issue commands or build units for the first five minutes in game",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 13,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Hotdrop edition",
+    "Challenge": "Complete a mission where you may not issue commands to your combat units, aside from transports",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 13,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Tab edition",
+    "Challenge": "Complete a mission where every hotkeyed unit or structure is mapped to the same group (so you have to tab repeatedly)",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 9,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Observer edition",
+    "Challenge": "Complete a mission where you may only move your camera using camera follow (Ctrl + Shift + F by default). No camera hotkeys or double-tapping control groups allowed",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 13,
+    "IsChallenge": "Yes"
+  },
+  {
+    "Nickname": "Top bar edition",
+    "Challenge": "Complete a mission where you may only deal combat damage using your top bar abilities",
+    "Source": "BingoData.json",
+    "Credit": "chesslooter",
+    "Category": "Challenge",
+    "Difficulty": 13,
     "IsChallenge": "Yes"
   }
 ]

@@ -4,11 +4,9 @@
     "BingoData.json"
   ],
   "Header": "Select which bonus options you want to include.",
+  "OnLoadEvent": "EnableAllOptions",
+  "OnLoadParam": "BonusOptions",
   "Buttons": [
-    {
-      "ButtonName": "Mutators",
-      "ButtonValue": "IsMutator"
-    },
     {
       "ButtonName": "Challenges",
       "ButtonValue": "IsChallenge"

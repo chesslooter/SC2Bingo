@@ -1,0 +1,15 @@
+{
+  "Id": "MutatorSelector",
+  "Source": [
+    "Mutators.json"
+  ],
+  "Header": "Do you wish to enable mutations?",
+  "OnLoadEvent": "EnableAllOptions",
+  "OnLoadParam": "MutatorSelector",
+  "Buttons": [
+    {
+      "ButtonName": "Mutators",
+      "ButtonValue": "IsMutator"
+    }
+  ]
+}

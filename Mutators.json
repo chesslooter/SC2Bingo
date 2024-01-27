@@ -1,0 +1,473 @@
+[
+  {
+    "Nickname": "Mutation x5",
+    "Challenge": "Complete a mission with five mutations of your choice",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 12,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Mutation x4",
+    "Challenge": "Complete a mission with four mutations of your choice",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 11,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Mutation x3",
+    "Challenge": "Complete a mission with three mutations of your choice",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 8,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Mutation x2",
+    "Challenge": "Complete a mission with two mutations of your choice",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Aggressive Deployment",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Alien Incubation",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Avenger",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Barrier",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Black Death",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 9,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Blizzard",
+    "Challenge": "Blizz pls",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Boom Bots",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Concussive Attacks",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Darkness",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Diffusion",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Double Edged",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Eminent Domain",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Evasive Maneuvers",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Fatal Attraction",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 9,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Fear",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Going Nuclear",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Hardened Will",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Heroes From the Storm",
+    "Challenge": "Or is it Resurgance?",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Inspiration",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Just Die",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Kill Bots",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Laser Drill",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Lava Burst",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Life Leech",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Long Range",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Mag-nificent",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Micro Transactions",
+    "Challenge": "I'm sorry.",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 8,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Mineral Shields",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Minesweeper",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Missile Command",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Moment of Silence",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Mutually Assured Destruction",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Orbital Strike",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Outbreak",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Photon Overload",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Polarity",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 8,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Power Overwhelming",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Propagators",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 9,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Purifier Beam",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using a random mutator",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Scorched Earth",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Self Destruction",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Shortsighted",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Slim Pickings",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Speed Freaks",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 8,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Temporal Field",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Time Warp",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 5,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Transmutation",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Twister",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Vertigo",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 8,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Void Reanimators",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Void Rifts",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 7,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation Walking Infested",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  },
+  {
+    "Nickname": "Complete a mission using the mutation We Move Unseen",
+    "Source": "Mutators.json",
+    "Credit": "chesslooter",
+    "Category": "Mutations",
+    "Difficulty": 6,
+    "IsMutator": "Yes"
+  }
+]

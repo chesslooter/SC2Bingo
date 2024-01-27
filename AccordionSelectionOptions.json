@@ -5,6 +5,11 @@
     "OptionFilename": "NumberOfPlayers.json"
   },
   {
+    "OptionName": "Difficulty",
+    "OptionValue": "DifficultyOptions",
+    "OptionFilename": "DifficultyOptions.json"
+  },
+  {
     "OptionName": "Filter Individual Factions",
     "OptionValue": "FactionFilterMode",
     "OptionFilename": "FactionsList.json"
@@ -13,5 +18,10 @@
     "OptionName": "Bonus Options",
     "OptionValue": "BonusOptions",
     "OptionFilename": "BonusOptions.json"
+  },
+  {
+    "OptionName": "Mutators",
+    "OptionValue": "MutatorSelector",
+    "OptionFilename": "MutatorSelector.json"
   }
 ]

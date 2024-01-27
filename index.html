@@ -29,7 +29,7 @@
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header" style="background-color: #2c2f33">
-                        <h5 class="modal-title" style="color: #fff">Customize your bingo options. Select each category below. Selected options will be highlighted.</h5>
+                        <h5 class="modal-title" style="color: #fff">Customize your bingo options. Select each category below. Selected options will be highlighted in white. Please note that the number of potential squares is still small at this point. Not selecting enough options may lead to a board not generating.</h5>
                     </div>
                     <div class="modal-body" style="background-color: #2c2f33">
                         <div class="container">
@@ -221,45 +221,47 @@
     //    }
     //}
 
-    //function toggleDifficultyOptions(option) {
-    //    if (document.getElementById(option).checked) {
-    //        if ((option == "Easy")) {
-    //            document.getElementById("Easy").checked = true;
-    //            document.getElementById("Normal").checked = false;
-    //            document.getElementById("Hard").checked = false;
-    //            document.getElementById("Brutal").checked = false;
-    //            document.getElementById("Nightmare").checked = false;
-    //        }
-    //        else if ((option == "Normal")) {
-    //            document.getElementById("Normal").checked = true;
-    //            document.getElementById("Easy").checked = false;
-    //            document.getElementById("Hard").checked = false;
-    //            document.getElementById("Brutal").checked = false;
-    //            document.getElementById("Nightmare").checked = false;
-    //        }
-    //        else if ((option == "Hard")) {
-    //            document.getElementById("Hard").checked = true;
-    //            document.getElementById("Easy").checked = false;
-    //            document.getElementById("Normal").checked = false;
-    //            document.getElementById("Brutal").checked = false;
-    //            document.getElementById("Nightmare").checked = false;
-    //        }
-    //        else if ((option == "Brutal")) {
-    //            document.getElementById("Brutal").checked = true;
-    //            document.getElementById("Easy").checked = false;
-    //            document.getElementById("Normal").checked = false;
-    //            document.getElementById("Hard").checked = false;
-    //            document.getElementById("Nightmare").checked = false;
-    //        }
-    //        else if ((option == "Nightmare")) {
-    //            document.getElementById("Nightmare").checked = true;
-    //            document.getElementById("Easy").checked = false;
-    //            document.getElementById("Normal").checked = false;
-    //            document.getElementById("Hard").checked = false;
-    //            document.getElementById("Brutal").checked = false;
-    //        }
-    //    }
-    //}
+    function toggleDifficultyOptions(option) {
+        if (document.getElementById(option).checked) {
+            if ((option == "Easy")) {
+                document.getElementById("Easy").checked = true;
+                document.getElementById("Normal").checked = false;
+                document.getElementById("Hard").checked = false;
+                document.getElementById("Brutal").checked = false;
+                document.getElementById("Nightmare").checked = false;
+            }
+            else if ((option == "Normal")) {
+                document.getElementById("Normal").checked = true;
+                document.getElementById("Easy").checked = false;
+                document.getElementById("Hard").checked = false;
+                document.getElementById("Brutal").checked = false;
+                document.getElementById("Nightmare").checked = false;
+            }
+            else if ((option == "Hard")) {
+                document.getElementById("Hard").checked = true;
+                document.getElementById("Easy").checked = false;
+                document.getElementById("Normal").checked = false;
+                document.getElementById("Brutal").checked = false;
+                document.getElementById("Nightmare").checked = false;
+            }
+            else if ((option == "Brutal")) {
+                document.getElementById("Brutal").checked = true;
+                document.getElementById("Easy").checked = false;
+                document.getElementById("Normal").checked = false;
+                document.getElementById("Hard").checked = false;
+                document.getElementById("Nightmare").checked = false;
+            }
+            else if ((option == "Nightmare")) {
+                document.getElementById("Nightmare").checked = false;
+                document.getElementById("Nightmare").disabled = true;
+                document.getElementById("Easy").checked = false;
+                document.getElementById("Normal").checked = false;
+                document.getElementById("Hard").checked = false;
+                document.getElementById("Brutal").checked = false;
+                alert("Nightmare isn't ready just yet. I guess DM me if you want a board. They're as nightmarish as you think.")
+            }
+        }
+    }
 
     function togglePartySizeOptions(option) {
         if (document.getElementById(option).checked) {
@@ -777,7 +779,7 @@
             if (validOption) {
                 if (checkingDifficulty) {
                     //Selects squares that are or are within 4 of the selected difficulty, or easier. Put Math.abs in front to remove the "or easier".
-                    if ((bingoElement["Difficulty"] - difficultyLevel) <= difficultyTolerance) {
+                    if (Math.abs(bingoElement["Difficulty"] - difficultyLevel) <= difficultyTolerance) {
                         console.log("Entered");
                         console.log("Difficulty Selected: " + difficultyLevel);
                         console.log("Current Average: " + currentBoardDifficulty);
@@ -788,7 +790,7 @@
                             pullAgain = recalculateDifficultyAverages(bingoElement, pullAgain, usedBingoOptions);
                         }
                         //If the board is easier than the difficulty, picks a square harder than the board average
-                        else if (currentBoardDifficulty < difficultyLevel && difficultyLevel < bingoElement["Difficulty"]) {
+                        else if (currentBoardDifficulty < difficultyLevel && difficultyLevel <= bingoElement["Difficulty"]) {
                             pullAgain = recalculateDifficultyAverages(bingoElement, pullAgain, usedBingoOptions);
                         }
                     }
